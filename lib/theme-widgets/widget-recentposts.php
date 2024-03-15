@@ -19,8 +19,9 @@ class FT_Posts_Widget extends WP_Widget {
 
 /* ==  Widget Setup ==============================*/
 
-	function FT_Posts_Widget()
-	{
+	function __construct() {
+		/* Widget settings. */
+		
 		$widget_ops = array('classname' => 'ft_posts_widget', 'description' => __('A widget that displays recent posts.', 'ft') );
 
 		$control_ops = array('id_base' => 'ft_posts_widget');
