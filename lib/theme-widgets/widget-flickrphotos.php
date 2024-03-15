@@ -13,7 +13,7 @@ class FT_Flickr extends WP_Widget {
 
 /* ==  Widget Setup ==============================*/
 
-	function FT_Flickr(){
+	function __construct() {
 
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'ft_flickr_widget', 'description' => __('A widget that displays Flickr photos.', 'ft') );

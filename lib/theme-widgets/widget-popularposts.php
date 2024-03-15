@@ -14,7 +14,7 @@ class FT_Popularposts extends WP_Widget {
 
 /* ==  Widget Setup ==============================*/	
 
-	function FT_Popularposts() {
+	function __construct() {
 	
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'ft_popular_widget', 'description' => __('A widget that displays popular posts.', 'ft') );
